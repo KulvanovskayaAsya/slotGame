@@ -54,7 +54,6 @@ export default class PreloaderScene extends Phaser.Scene {
         this.load.path = 'src/assets/';
         this.load.image('bg', 'background.jpg');
         this.load.atlas('symbols', 'symbols/symbols.png', 'symbols/symbols.json');
-        this.load.atlas('symbols_blur', 'symbols/symbols_blur.png', 'symbols/symbols_blur.json');
     }
 
     create() {

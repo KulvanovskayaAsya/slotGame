@@ -1,14 +1,12 @@
 import Phaser from 'phaser';
 import Preloader from './scenes/preloader';
 import Game from './scenes/game';
+import { config } from './config';
 
-var config = {
+let game = new Phaser.Game({
     type: Phaser.AUTO,
-    width: 1200,
-    height: 800,
-    audio: {
-        disableWebAudio: true
-    },
+    width: config.game.width,
+    height: config.game.height,
     physics: {
         default : 'arcade',
         arcade: {
@@ -27,6 +25,4 @@ var config = {
         Preloader,
         Game
     ]
-};
-
-let game = new Phaser.Game(config);
+});
